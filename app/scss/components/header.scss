@@ -1,34 +1,31 @@
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     z-index: 3;
-    width: 100%;
-    background-color: transparent;
 }
 
 .header__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 45px;
-    padding-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .header__menu {
     position: fixed;
     top: 0;
-    right: -165px;
+    bottom: 0;
+    right: -320px;
     z-index: 3;
-    //display: none;
-    padding-top: 44px;
-    padding-bottom: 30px;
-    width: 165px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 320px;
     font-size: 16px;
     color: var(--white);
-    background-color: var(--orange);
-    border-radius: var(--radius); 
-    box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+    background-color: var(--dark);
     transition: right 0.3s ease-in-out;
 }
 
@@ -36,9 +33,6 @@
     right: 0;
 }
 
-.header__login {
-    display: none;
-}
 
 .header__toggler {
     margin-top: -3px;
@@ -48,7 +42,7 @@
 
     &:hover,
     &:focus {
-        color: var(--orange);
+        color: var(--yellow2);
     }
 
     &:active {
@@ -58,13 +52,12 @@
 
 @media (min-width: $desktop) {
     .header {
-        background: rgba(242, 120, 92, 0.7);
-        box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+        background: var(--dark);
     }
 
     .header__wrapper {
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 23px;
+        padding-bottom: 23px;
     }
 
     .header__toggler {
@@ -82,18 +75,5 @@
         width: unset;
         background-color: transparent;
         box-shadow: none;
-    }
-
-    .header__login {
-        display: flex;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 21px;
-        border-radius: var(--radius);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     }
 }
