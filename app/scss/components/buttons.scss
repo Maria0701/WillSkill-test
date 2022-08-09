@@ -8,13 +8,15 @@
 }
 
 .btn--primary {
-    padding-top: 7.5px;
-    padding-bottom: 7.5px;
-    padding-left: 12.5px;
-    padding-right: 12px;
-    color: var(--white);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.167;
     text-decoration: none;
-    background-color: var(--green);
+    background-color: var(--yellow);
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
 

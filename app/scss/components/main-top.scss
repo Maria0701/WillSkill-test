@@ -1,7 +1,8 @@
 .main-top {
+    --padding-bottom: 40px;
     position: relative;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: var(--padding-bottom);
     background-color: var(--yellow);
     background-image: url(../../img/top.svg);
     background-repeat: no-repeat;
@@ -13,6 +14,10 @@
     z-index: 1;
 }
 
+.main-top__container {
+    position: relative;
+}
+
 .main-top__h1 {
     max-width: 78%;
     margin-top: 0;
@@ -20,7 +25,7 @@
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 105%;
     color: var(--white);
     text-transform: uppercase;
@@ -30,7 +35,7 @@
     max-width: 53%;
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     line-height: 1.167;
     color: var(--black);
 }
@@ -40,7 +45,7 @@
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     line-height: 1.2;
     color: var(--black);
     text-transform: uppercase;
@@ -49,120 +54,132 @@
 .main-top__remark {
     margin: 0;
     max-width: 33%;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     line-height: 1;
     color: var(--black);
 }
 
 .main-top__img {
+    --bottom: calc(-41px - var(--padding-bottom));
     max-width: 300px;
     position: absolute;
     z-index: 0;
-    right: 0;
+    right: var(--padding);
     width: 87%;
-    bottom: -41px;
+    bottom: var(--bottom);
 }
 
 @media (min-width: 500px) {
     .main-top {
+        --padding-bottom: 60px;
         padding-top: 60px;
-        padding-bottom: 60px;
     }
 
     .main-top__h1 {
-        font-size: 3.5em;
+        font-size: 3rem;
     }
 
     .main-top__remark,
     .main-top__text {
-        font-size: 0.9em;
+        font-size: 0.9rem;
     }
 
     .main-top__img {
-        max-width: 400px;
+        max-width: 350px;
+        --bottom: calc(-60px - var(--padding-bottom));
     }    
 } 
 
 @media (min-width: $tablet) {
-    .main-top {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
     .main-top__h1 {
         margin-top: 0;
         margin-bottom: 24px;
-        font-size: 4em;
+        font-size: 4rem;
     }
 
     .main-top__text {
         margin-top: 0;
-        margin-bottom: 60px;
-        font-size: 1em;
+        margin-bottom: 80px;
+        font-size: 1rem;
         line-height: 1.167;
     }
 
     .main-top__help {
         margin-bottom: 16px;
-        font-size: 2em;
+        font-size: 2rem;
         line-height: 1.2;
     }
 
     .main-top__remark {
-        font-size: 1em;
+        font-size: 1rem;
         line-height: 1;
     }
 
     .main-top__img {
-        max-width:70%;
-
-        width: 87%;
-        bottom: -60px;
+        max-width:50%;
     } 
 }
 
 @media (min-width: 840px) {
     .main-top__img {
-        max-width:550px;
+        //max-width:550px;
+    }
+
+    .main-top__h1 {
+        font-size: 5rem;
+    }
+
+    .main-top__text {
+        margin-bottom: 120px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .main-top__h1 {
+        font-size: 6rem;
+    }
+
+    .main-top__img {
+        max-width: 530px;
     }
 }
 
 
 @media (min-width: $desktop) {
     .main-top {
+        --padding-bottom: 98px;
         padding-top: 96px;
-        padding-bottom: 98px;
     }
 
     .main-top__h1 {
         max-width: 1008px;
         margin-top: 0;
         margin-bottom: 24px;
-        font-size: 9em;
+        font-size: 9rem;
     }
 
     .main-top__text {
         max-width: 680px;
         margin-top: 0;
         margin-bottom: 120px;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         line-height: 1.167;
     }
 
     .main-top__help {
         margin-bottom: 16px;
-        font-size: 2em;
+        font-size: 2rem;
         line-height: 1.2;
     }
 
     .main-top__remark {
         max-width: 420px;
-        font-size: 1.125em;
+        font-size: 1.125rem;
         line-height: 1.67;
     }
 
     .main-top__remark {
-        font-size: 1.125em;
+        font-size: 1.125rem;
         line-height: 1.67;
     }
 
