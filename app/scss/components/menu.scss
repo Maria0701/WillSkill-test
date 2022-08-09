@@ -22,7 +22,7 @@
 
     &:hover,
     &:focus {
-        color: var(--green);
+        color: var(--yellow);
         cursor: pointer;       
     }
 
@@ -57,7 +57,7 @@
     .menu__list {
         display: flex;
         flex-wrap: wrap;
-        grid-gap: 23px;
+        grid-gap: 20px;
         background-color: transparent;
     }
 
