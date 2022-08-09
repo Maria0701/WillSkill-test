@@ -1,0 +1,25 @@
+.logo {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white);
+
+    &:active {
+        cursor: grab;
+    }
+}
+
+.logo__text {
+    display: none;
+}
+
+@media (min-width: $desktop) {
+    .logo__text {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        grid-gap: 6px;
+    }
+}

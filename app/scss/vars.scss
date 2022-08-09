@@ -1,0 +1,21 @@
+$desktop: 1228px;
+$tablet: 768px;
+$mobile: 320px;
+
+:root {
+    --white: #ffffff;
+    --yellow: #FCDA28;
+    --yellow2: #FCB500;
+    --dark: #111111;
+    --black: #000000;
+    --radius: 10px;
+    --padding: 10px;
+}
+
+@media (max-width: 1227px) {
+    :root {
+        --radius: 15px;
+        --padding: 15px;
+    }
+}
+

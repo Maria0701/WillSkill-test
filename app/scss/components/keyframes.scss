@@ -1,0 +1,40 @@
+@keyframes formdrop {
+    0% {
+        transform: translate3d(-50%, -1500px, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, -50%, 0);
+    }
+}
+
+@keyframes formdrop2 {
+    0% {
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, 1000px, 0);
+    }
+}
+
+@keyframes left {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 800px;
+    }
+}
+
+@keyframes right {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -800px;
+    }
+}
+

@@ -1,0 +1,52 @@
+.main-top {
+    padding-top: 142px;
+    padding-bottom: 61px;
+    background-image: url('../img/mountains.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-top__title {
+    display: none;
+}
+
+.main-top__text {
+    display: none;
+}
+
+@media (min-width: $desktop) {
+    .main-top  {
+        padding-top: 122px;
+        padding-bottom: 254px;
+    }
+
+    .main-top__title {        
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: var(--white);
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 96px;
+    }
+
+    .main-top__text {
+        display: block;
+        padding-bottom: 13px;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: var(--white);
+        font-style: italic;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .main-top__wrapper {
+        display: grid;
+        grid-gap: 32px;
+        padding-right: 323px;
+    }
+}
+

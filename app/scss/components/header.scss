@@ -1,0 +1,99 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    background-color: transparent;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 10px;
+}
+
+.header__menu {
+    position: fixed;
+    top: 0;
+    right: -165px;
+    z-index: 3;
+    //display: none;
+    padding-top: 44px;
+    padding-bottom: 30px;
+    width: 165px;
+    font-size: 16px;
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: var(--radius); 
+    box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+    transition: right 0.3s ease-in-out;
+}
+
+.header.opened .header__menu {
+    right: 0;
+}
+
+.header__login {
+    display: none;
+}
+
+.header__toggler {
+    margin-top: -3px;
+    cursor: pointer;
+    color: var(--white);
+    transition: color 0.3s ease-in-out;    
+
+    &:hover,
+    &:focus {
+        color: var(--orange);
+    }
+
+    &:active {
+        cursor: grab;
+    }
+}
+
+@media (min-width: $desktop) {
+    .header {
+        background: rgba(242, 120, 92, 0.7);
+        box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+    }
+
+    .header__wrapper {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .header__toggler {
+        display:  none;
+    }
+
+    .header__menu {
+        position: relative;
+        top: unset;
+        right: unset;        
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: unset;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .header__login {
+        display: flex;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        border-radius: var(--radius);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    }
+}
