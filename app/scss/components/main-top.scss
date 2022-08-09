@@ -121,10 +121,6 @@
 }
 
 @media (min-width: 840px) {
-    .main-top__img {
-        //max-width:550px;
-    }
-
     .main-top__h1 {
         font-size: 5rem;
     }
@@ -178,7 +174,9 @@
     }
 
 
-    .main-top__img {
-        max-width: 50%;
-    }
+    .main-top__img {        
+        --bottom: calc(-105px - var(--padding-bottom));
+        right: 27px;
+        max-width: 55%;
+    }   
 }

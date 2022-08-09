@@ -31,7 +31,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 32px;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .main-center__price-old {
@@ -57,8 +57,10 @@
 }
 
 .main-center__block {
-    display: grid;
-    align-items: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     gap: 1rem;
 
 }
@@ -83,6 +85,7 @@
     line-height: 1.195;
 
     span {
+        padding-top: 11px;
         font-size: 1rem;
         line-height: 1.167;
     }
@@ -96,6 +99,7 @@
 
     .main-center__content {
         grid-template-columns: 2fr 5fr 2fr;
+        width: 100%;
     }
 }
 
@@ -108,7 +112,7 @@
 
     .main-center__price {
         gap: 32px;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
     .main-center__price-old {
@@ -134,12 +138,12 @@
         line-height: 1.167;
     }
     
-    .main-center__block--center {
+    .main-center__block--center .main-center__text {
         font-size: 2rem;
         line-height: 1.195;
     
         span {
-            font-size: 1.5;
+            font-size: 1.5rem;
             line-height: 1.167;
         }
     }
@@ -149,7 +153,7 @@
 @media (min-width: $desktop) {
     .main-center {
         padding-bottom: 112px;
-        padding-top: 112px;
+        padding-top: 108px;
     }
 
     .main-center__container {
@@ -157,13 +161,13 @@
     }
 
     .main-center__title {
-        margin-bottom: 85px;
+        margin-bottom: 60px;
         font-size: 3rem;
         line-height: 1.188;
     }
 
     .main-center__content {
-        grid-template-columns: 193px 480px 193px;
+        grid-template-columns: 192px 480px 193px;
         margin-bottom: 64px;
     }
     
